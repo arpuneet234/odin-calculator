@@ -1,0 +1,57 @@
+div{
+    
+    border :1px solid black;
+    padding:5px
+}
+#button-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:350px;
+    align-items: center;
+
+
+}
+
+#left-operators{
+    display: flex;
+    flex-direction: column;
+    height:300px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#row-5{
+    display: flex;
+}
+    
+#display{
+    background-color: aliceblue;
+    height:30px;
+    border-radius: 20px;
+    margin:5px;
+
+}
+
+#cal-body{
+    border-radius: 20px;
+    width:300px;
+    background-color: rgb(185, 110, 110);
+    display:flex;
+    flex-direction: column;
+}
+
+#button-container{
+    border-radius: 20px;
+    background-color: bisque;
+}
+
+button{
+    background-color: rgb(168, 168, 218);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin:1px;
+
+    
+}
