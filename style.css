@@ -23,6 +23,8 @@ body {
 }
 #display {
   height: 50px;
+  font-size: larger;
+  text-align: right;
 }
 .keys-row,
 #top-row {
