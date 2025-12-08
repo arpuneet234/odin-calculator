@@ -3,8 +3,8 @@ const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
 let num1 = null,
   num2 = null,
-  res = null;
-oper = null;
+  res = null,
+  oper = null;
 justCalculated = false;
 
 buttons.forEach((button) => {
@@ -32,7 +32,6 @@ function fn(e) {
     if (num1 == null) {
       num1 = Number(display.textContent);
       display.textContent = "";
-      console.log(num1);
     }
   } else if (e.target.id == "equals") {
     if (justCalculated == false) {
@@ -74,8 +73,8 @@ function divide(num1, num2) {
 
 function operate(num1, num2, operator) {
   console.log(num1);
-  console.log(num2);
   console.log(operator);
+  console.log(num2);
 
   if (operator == "+") {
     res = add(num1, num2);
@@ -89,6 +88,8 @@ function operate(num1, num2, operator) {
   if (operator == "/") {
     res = divide(num1, num2);
   }
+  console.log(res);
+  console.log("");
   display.textContent = res;
   justCalculated = true;
 }
