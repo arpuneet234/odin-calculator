@@ -11,7 +11,7 @@ buttons.forEach((button) => {
   button.addEventListener("click", fn);
 });
 function fn(e) {
-  if (!isNaN(e.target.textContent)) {
+  if (e.target.classList.contains("number")) {
     if (justCalculated == true) {
       display.textContent = "";
       justCalculated = false;
@@ -22,7 +22,7 @@ function fn(e) {
     }
     display.textContent += e.target.textContent;
     //   num1 = num1 * 10 + Number(button.textContent);
-  } else if (e.target.className == "operator") {
+  } else if (e.target.classList.contains("operator")) {
     if (justCalculated == true) {
       display.textContent = "";
       justCalculated = false;
